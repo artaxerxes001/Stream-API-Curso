@@ -32,7 +32,7 @@ Existem mais de 30 operações e 7 staticos que podem ser feitas com Stream:
 #### Metodo MAP
 
 MAP recebe uma lambda ou referencia de metodo que usa para transformar os elementos de uma stream gerando uma nova
-stream com os dados mapeados
+stream com os dados mapeados. A nova stream tera o mesmo tamanho que a anterior
 
 exemplo: temos uma stream com produto (nome, preço), o map abaixo fornecera uma stream com os nomes dos produtos
 
@@ -50,3 +50,18 @@ Para implementar o Filter passamos como argumento a interface funcional Predicat
 Exemplo: Filtrar os numeros pares de um Stream
 
 ![exemplo de ilustração de um filter](./assets/image.png)
+
+#### Metodo Reduce
+
+Consegue transforma uma stream de dados em algo completamente diferente. Nao precisa ter nem mesmo uma ligaçao direita com os tipos de cada um dos elementos.
+
+Pode pegar um array e retornar um unico elemento, por exemplo a soma de todos os elementos do array.
+
+Na sintaxe do Reduce (acumulado, n). n sao os valores da stream. O acumulador e passado para todos os elementos da stream durante a iterraçao, ja que na primeira nao teve a funçao anterior, podemos passar um valor inicial ou nao.
+
+O acumulador nos da flexibilidade para definir o que vai ser, pode ser um objeto, array, tipo primitivo, etc.
+
+Exemplo: calcular o valor total em uma Stream.
+![](.images/reduce.png)
+
+**OBS:** no final o reduce não gera outra stream, o reduce é um metodo terminal da API Stream.
