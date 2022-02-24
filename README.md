@@ -76,3 +76,9 @@ Verifica se todos os elementos do stream cumprem totalmente ou parcialmente ao u
 #### Função Max e Min
 Retornam o maior ou menor elemento da stream com base em um Comparator 
 
+#### Outras Funções interessantes
+
+- **distinct** - não aceita valores dublicados na construção da stream
+- **skip** - pula elementos da stream 
+- **limit** - limita o numero de elementos que vão ser processados
+- **takeWhile** - pega os elementos enquanto acontecer uma determinada condição.
