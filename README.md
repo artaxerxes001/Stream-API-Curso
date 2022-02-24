@@ -73,3 +73,6 @@ Verifica se todos os elementos do stream cumprem totalmente ou parcialmente ao u
 - **anyMatch** - verifca se pelomenos um dos elementos satisfaz ao criterio
 - **noneMatch** - verifca se todos os elementos não satisfazem ao criterio. Faz a verificação de forma inversa ao allMatch
 
+#### Função Max e Min
+Retornam o maior ou menor elemento da stream com base em um Comparator 
+
