@@ -27,9 +27,9 @@ Existem mais de 30 operações e 7 staticos que podem ser feitas com Stream:
 
 ---
 
-### Metodos do Filter
+### Função do Filter
 
-#### Metodo MAP
+#### Função MAP
 
 MAP recebe uma lambda ou referencia de metodo que usa para transformar os elementos de uma stream gerando uma nova
 stream com os dados mapeados. A nova stream tera o mesmo tamanho que a anterior
@@ -40,7 +40,7 @@ exemplo: temos uma stream com produto (nome, preço), o map abaixo fornecera uma
 
 desse modo criamos uma nova stream com os nomes dos produtos apenas.
 
-#### Metodo Filter
+#### Função Filter
 
 Filter como o propio nome sugere serve para filtrar dados, usamos para obter uma nova stream de dados filtrados com base
 a um criterio. Se o criterio for verdadeioro fara parte da stream caso for falso não fara parte, caso todos os dados forem falsos sera um stream vazio.
@@ -51,7 +51,7 @@ Exemplo: Filtrar os numeros pares de um Stream
 
 ![exemplo de ilustração de um filter](./assets/image.png)
 
-#### Metodo Reduce
+#### Função Reduce
 
 Consegue transforma uma stream de dados em algo completamente diferente. Nao precisa ter nem mesmo uma ligaçao direita com os tipos de cada um dos elementos.
 
@@ -62,6 +62,14 @@ Na sintaxe do Reduce (acumulado, n). n sao os valores da stream. O acumulador e 
 O acumulador nos da flexibilidade para definir o que vai ser, pode ser um objeto, array, tipo primitivo, etc.
 
 Exemplo: calcular o valor total em uma Stream.
+
 ![](.images/reduce.png)
 
 **OBS:** no final o reduce não gera outra stream, o reduce é um metodo terminal da API Stream.
+
+#### Função Match
+Verifica se todos os elementos do stream cumprem totalmente ou parcialmente ao um deteminado criterio
+- **allMatch** - verifca se todos os elementos satisfazem ao criterio
+- **anyMatch** - verifca se pelomenos um dos elementos satisfaz ao criterio
+- **noneMatch** - verifca se todos os elementos não satisfazem ao criterio. Faz a verificação de forma inversa ao allMatch
+
