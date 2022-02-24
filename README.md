@@ -36,7 +36,6 @@ stream com os dados mapeados
 
 exemplo: temos uma stream com produto (nome, preço), o map abaixo fornecera uma stream com os nomes dos produtos
 
-
 ![exemplo de um Map](imagens/map sintaxe1.jpg)
 
 desse modo criamos uma nova stream com os nomes dos produtos apenas.
